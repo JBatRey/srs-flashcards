@@ -13,7 +13,6 @@ new_stack = pts.button_dialog(
     ],
 ).run()
 
-
 if new_stack == True:
 
     mypath = os.getcwd()
@@ -41,7 +40,9 @@ else:
         os.mkdir("./saved_decks/")
 
     onlyfiles = [
-        (f, f) for f in listdir(mypath) if isfile(join(mypath, f)) and f[-4:] == ".csv"
+        (f, f)
+        for f in os.listdir(mypath)
+        if isfile(join(mypath, f)) and f[-4:] == ".csv"
     ]
 
     address = pts.radiolist_dialog(
