@@ -79,7 +79,6 @@ class Deck:
         savefile.to_csv(fullname , header=False, index=False) 
 
 
-#mydeck = Deck('lista1.csv')
-#mydeck.save()
+
 
 
